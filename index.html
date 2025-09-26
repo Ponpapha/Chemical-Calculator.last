@@ -8,23 +8,7 @@
         body { font-family: sans-serif; background: #f5f5f5; margin: 0; }
         .container { display: flex; padding: 10px; gap: 20px; }
 
-        /* ตารางธาตุ */
-        .periodic-table {
-            width: 300px;
-            max-height: 95vh;
-            overflow: auto;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background: #fff;
-            padding: 10px;
-            position: sticky;
-            top: 10px;
-        }
-        .periodic-table img {
-            width: 100%;
-            display: block;
-            border-radius: 4px;
-        }
+        /* เอาตารางธาตุออกไปแล้ว */
 
         /* เครื่องมือ */
         .tool-container {
@@ -49,10 +33,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="periodic-table">
-            <h2>ตารางธาตุ</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Simple_Periodic_Table_Chart-en.svg" alt="Periodic Table">
-        </div>
+        <!-- ตารางธาตุถูกลบออกไปแล้ว -->
 
         <div class="tool-container">
 
@@ -220,7 +201,6 @@
                     let M=parseFloat(document.getElementById("M_mol5").value), vdm=parseFloat(document.getElementById("vdm_mol5").value); 
                     if(!isNaN(M)&&!isNaN(vdm)) mol=M*vdm;
                 } 
-                // สูตร mol = N / (6.02 x 10^23) ถูกนำออกไปแล้ว
 
                 result = isNaN(mol) ? "⚠️ กรุณากรอกค่าตัวเลขให้ครบ" : "mol = "+mol.toFixed(6);
 
